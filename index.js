@@ -6,13 +6,13 @@ const passport = require('passport');
 require('./models/User');
 require('./services/passport');
 
-app.get('/', (req, res) =>{
-    res.send({hi: 'there'})
-});
-
 mongoose.connect(keys.mongoURI);
 
 const app = express();
+
+app.get('/', (req, res) =>{
+    res.send({hi: 'there'})
+});
 
 app.use(
     cookieSession({
