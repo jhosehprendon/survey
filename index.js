@@ -6,13 +6,9 @@ const passport = require('passport');
 require('./models/User');
 require('./services/passport');
 
-mongoose.connect(keys.mongoURI);
+mongoose.connect(process.env.MONGODB_URI || keys.mongoURI);
 
 const app = express();
-
-app.get('/', (req, res) =>{
-    res.send({hi: 'there'})
-});
 
 app.use(
     cookieSession({
