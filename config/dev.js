@@ -5,5 +5,6 @@ module.exports = {
     mongoURI: 'mongodb://jhosehp:123@ds213199.mlab.com:13199/survey-dev',
     cookieKey: 'jdskcndkcnkdnkdnoooo',
     stripePublishableKey: "pk_test_Mwi8eAKeQvWtDsbATdeZo047",
-    stripeSecretKey: "sk_test_L4g9NSJbrj7nSdfXu0I5beDZ"
+    stripeSecretKey: "sk_test_L4g9NSJbrj7nSdfXu0I5beDZ",
+    sendgridKey: "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"
 };
