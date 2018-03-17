@@ -50,6 +50,10 @@ function validate (values) {
 
     errors.emails = validateEmails(values.emails || '');
 
+    if (!values.emails) {
+        errors.emails = 'You must provide emails';
+    }
+
     return errors;
 }
 
